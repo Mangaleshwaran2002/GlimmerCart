@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='%23000000' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%23230046' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%232f0052' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%233b075e' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%2348156a' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23552277' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment:fixed;
+    background-size:cover;
+}
+svg{
+    width: 20px;
+    height: 20px;
+}
+a{
+    outline: none;
+    text-decoration: none;
+    color: white;
+}
+
+span{
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+}
+.container{
+    margin: 0;
+    padding: 0.5em 0.5em;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container form{
+    color: #ffffff;
+    display: flex;
+    padding-top: 2em;
+    flex-direction: column;
+    gap:2em;
+    /* width: 50%; */
+    padding: 2em 3em;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    animation: forwards fade-in-anime 1s;
+}
+.container label{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap:0.3em;
+    font-size: large;
+    font-weight: 600;
+}
+.container input{
+    padding: 0.3em 0.2em;
+    /* margin: 0.5em 0.5em; */
+    border-radius: 5px;
+    padding-right:5em;
+    border: 1px solid black;
+    font-size: large;
+    /* background-color: blue; */
+}
+.container .btn-container{
+    width: 100%;
+    padding: 0 0.5em;
+    text-align: center;
+}
+.container .btn-container button{
+    color: #ffffff;
+    padding: 0.8em 1.5em;
+    border: 1px solid #000000;
+    background:#550055;
+    border-radius: 10px;
+    font-size: medium;
+}
+p{
+    color: #ffffff;
+}
+@keyframes fade-in-anime {
+    from{
+        opacity: 0;
+        scale:0.5;
+    }
+    to{
+        opacity: 1;
+        scale:1;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    form{
+        width: 100%;
+        margin: 0 0.5em;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    form{
+        width: 30%;
+        margin: 0 0.5em;
+    }
+}

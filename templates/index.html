@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/index_style.css' %}">
+{% endblock %}
+{% block body %}
+
+    <div class="wrapper">
+        <!-- <div id="search-container">
+            <input type="text" name="" id="search-input" placeholder="Search product here"/>
+            <button id="search">Search</button>
+        </div> -->
+    </div>
+    <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">ALL</button>
+    </div>
+    <div id="products">
+
+    </div>
+
+
+
+
+
+    <script src="{% static 'js/index_script.js' %}"></script>
+    <!-- <script src="script2.js"></script> -->
+{% endblock %}
